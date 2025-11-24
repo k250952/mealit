@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Cart notification popup -->
+    <div class="cart-notification" id="cartNotification">
+        Item added to cart!
+    </div>
+
+    <div class="container">
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Meals</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="subscriptionpage.html">Subscribe</a></li>
+                <li class="cart-link">
+                    <a href="cart.html">Cart</a>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="hero-meals">
+            <div class="inner">
+                <h1>Meal It!</h1>
+                <p>Browse our selection of meals or order them individually!</p>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <h2 class="section-title">🇮🇹 Italian Cuisine</h2>
+
+            <div class="meal-grid">
+                <div class="meal-card">
+                    <img src="mealimages/fettucini alfredo.png" alt="Fettuccine Alfredo">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Fettuccine Alfredo</h3>
+                        <p class="meal-desc">Creamy, rich fettuccine pasta tossed in an authentic parmesan and butter
+                            sauce. Twirl your fork into pure comfort.</p>
+
+                        <div class="meal-info">
+                            <small>~350–600 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-carbs">Carbs</span>
+                                <span class="badge badge-cheese">Cheesy</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="italian-fettuccine"
+                            data-meal-name="Fettuccine Alfredo" data-meal-price="950">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/margheritapizza.png" alt="Pizza">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Margherita Pizza (Slice)</h3>
+                        <p class="meal-desc">A slice of Italy in every bite. Hand-tossed dough topped with fresh
+                            mozzarella, basil, and San Marzano tomato sauce.</p>
+
+                        <div class="meal-info">
+                            <small>~250–400 kcal per slice</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-carbs">Carbs</span>
+                                <span class="badge badge-savory">Fresh Basil</span>
+                                <span class="badge badge-cheese">Cheesy</span>
+                                <span class="badge badge-special">Must Try</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="italian-pizza"
+                            data-meal-name="Margherita Pizza (Slice)" data-meal-price="650">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/mushroomrisotto.png" alt="Risotto">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Mushroom Risotto</h3>
+                        <p class="meal-desc">Creamy, dreamy, spoonfuls of luxury. Arborio rice slowly cooked in earthy
+                            mushroom broth with parmesan.</p>
+
+                        <div class="meal-info">
+                            <small>~400–550 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-carbs">Carbs</span>
+                                <span class="badge badge-vegan">Vegetarian</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="italian-risotto" data-meal-name="Mushroom Risotto"
+                            data-meal-price="1100">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/lasagnabolognese.png" alt="Lasagna">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Beef Lasagna Bolognese</h3>
+                        <p class="meal-desc">Layer upon layer of irresistible richness. Oven-baked pasta sheets with
+                            hearty beef ragu and creamy béchamel sauce.</p>
+
+                        <div class="meal-info">
+                            <small>~450–650 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-carbs">Carbs</span>
+                                <span class="badge badge-protein">High Protein</span>
+                                <span class="badge badge-cheese">Cheesy</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="italian-lasagna"
+                            data-meal-name="Beef Lasagna Bolognese" data-meal-price="1200">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h2 class="section-title">🇨🇳 Chinese Cuisine</h2>
+
+            <div class="meal-grid">
+                <div class="meal-card">
+                    <img src="mealimages/lo mein.png" alt="Noodles">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Vegetable Lo Mein</h3>
+                        <p class="meal-desc">Long noodles, long happiness. Soft wheat noodles stir-fried in a rich soy
+                            sauce with crisp, fresh Asian vegetables.</p>
+
+                        <div class="meal-info">
+                            <small>~350–550 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-carbs">Carbs</span>
+                                <span class="badge badge-vegan">Vegetarian</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="chinese-lomein" data-meal-name="Vegetable Lo Mein"
+                            data-meal-price="850">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/shrimprice.png" alt="Fried Rice">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Shrimp Fried Rice</h3>
+                        <p class="meal-desc">A bowl full of sizzling flavor. Wok-tossed Jasmine rice with large shrimp,
+                            fresh peas, carrots, and scrambled egg.</p>
+
+                        <div class="meal-info">
+                            <small>~400–600 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-carbs">Carbs</span>
+                                <span class="badge badge-protein">Seafood</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="chinese-friedrice"
+                            data-meal-name="Shrimp Fried Rice" data-meal-price="1050">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/sweetandsourchicken.png" alt="Sweet & Sour Chicken">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Sweet & Sour Chicken</h3>
+                        <p class="meal-desc">Crispy, tangy, sweet perfection. Deep-fried chicken coated in a sticky
+                            sauce with bell peppers, onions, and pineapple.</p>
+
+                        <div class="meal-info">
+                            <small>~450–650 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-protein">High Protein</span>
+                                <span class="badge badge-savory">Sweet & Tangy</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="chinese-sweetsour"
+                            data-meal-name="Sweet & Sour Chicken" data-meal-price="950">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h2 class="section-title">🇲🇽 Mexican Cuisine</h2>
+
+            <div class="meal-grid">
+                <div class="meal-card">
+                    <img src="mealimages/taco.png" alt="Tacos">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Street Style Tacos (2 pieces)</h3>
+                        <p class="meal-desc">A handheld fiesta of flavor. Two soft corn tortillas filled with seasoned
+                            carne asada, fresh cilantro, and onion.</p>
+
+                        <div class="meal-info">
+                            <small>~300–500 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-protein">High Protein</span>
+                                <span class="badge badge-spice">Spicy</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="mexican-tacos"
+                            data-meal-name="Street Style Tacos (2 pieces)" data-meal-price="800">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/quesadilla.png" alt="Quesadillas">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Chicken Fajita Quesadillas</h3>
+                        <p class="meal-desc">Cheesy, golden, melt-in-your-mouth goodness. Large flour tortilla grilled
+                            with Monterey Jack cheese and sizzling fajita chicken.</p>
+
+                        <div class="meal-info">
+                            <small>~350–550 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-carbs">Carbs</span>
+                                <span class="badge badge-cheese">Cheesy</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="mexican-quesadilla"
+                            data-meal-name="Chicken Fajita Quesadillas" data-meal-price="900">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/burritto.png" alt="Burrito">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Supreme Cali Burrito</h3>
+                        <p class="meal-desc">A whole meal wrapped in happiness. Stuffed with seasoned steak, crisp
+                            fries, avocado, cheese, and sour cream.</p>
+
+                        <div class="meal-info">
+                            <small>~600–900 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-carbs">Carbs</span>
+                                <span class="badge badge-protein">High Protein</span>
+                                <span class="badge badge-special">Customer Favorite</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="mexican-burrito"
+                            data-meal-name="Supreme Cali Burrito" data-meal-price="1100">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/nachos.png" alt="Nachos">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Loaded Nachos (Single Serving)</h3>
+                        <p class="meal-desc">Crunch, cheese, and chaos in the best way. Crispy tortilla chips layered
+                            with ground beef, queso, jalapeños, and guacamole.</p>
+
+                        <div class="meal-info">
+                            <small>~350–600 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-carbs">Carbs</span>
+                                <span class="badge badge-cheese">Cheesy</span>
+                                <span class="badge badge-spice">Spicy</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="mexican-nachos"
+                            data-meal-name="Loaded Nachos (Single Serving)" data-meal-price="750">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h2 class="section-title">🇺🇸 American Cuisine</h2>
+
+            <div class="meal-grid">
+                <div class="meal-card">
+                    <img src="mealimages/burger.png" alt="Burgers">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Classic Cheeseburger</h3>
+                        <p class="meal-desc">The king of comfort food. Juicy beef patty topped with melted cheddar
+                            cheese, served on a brioche bun with house sauce.</p>
+
+                        <div class="meal-info">
+                            <small>~500–800 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-protein">High Protein</span>
+                                <span class="badge badge-carbs">Carbs</span>
+                                <span class="badge badge-primary">New</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="american-burger"
+                            data-meal-name="Classic Cheeseburger" data-meal-price="900">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/ribeyesteak.png" alt="Steaks">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Ribeye Steak (Medium Cut)</h3>
+                        <p class="meal-desc">Bold, smoky, and made to impress. Aged ribeye, grilled to your
+                            specification and seasoned with coarse sea salt.</p>
+
+                        <div class="meal-info">
+                            <small>~400–700 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-protein">High Protein</span>
+                                <span class="badge badge-savory">Grilled</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="american-steak"
+                            data-meal-name="Ribeye Steak (Medium Cut)" data-meal-price="1850">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/TexasBrisket.png" alt="Barbecue">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Pulled Halal Brisket BBQ Plate</h3>
+                        <p class="meal-desc">Slow-smoked goodness that hits the soul. Tender Brisket, smoked for 12
+                            hours, served with a tangy vinegar slaw.</p>
+
+                        <div class="meal-info">
+                            <small>~500–900 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-protein">High Protein</span>
+                                <span class="badge badge-savory">Smoky</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="american-bbq"
+                            data-meal-name="Pulled Pork BBQ Plate" data-meal-price="1300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/mac&cheese.png" alt="Mac & Cheese">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Truffle Mac & Cheese</h3>
+                        <p class="meal-desc">Creamy temptation in every scoop. Elbow macaroni baked in a rich
+                            five-cheese blend, infused with white truffle oil.</p>
+
+                        <div class="meal-info">
+                            <small>~300–500 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-carbs">Carbs</span>
+                                <span class="badge badge-carbs">Cheesy</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="american-mac"
+                            data-meal-name="Truffle Mac & Cheese" data-meal-price="850">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="section">
+            <h2 class="section-title">🇵🇰 Pakistani Cuisine</h2>
+
+            <div class="meal-grid">
+                <div class="meal-card">
+                    <img src="mealimages/biryani.png" alt="Biryani">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Chicken Biryani</h3>
+                        <p class="meal-desc">Aromatic, spiced-up celebration in a plate. Layered basmati rice dish with
+                            tender marinated chicken and a perfect blend of rich spices.</p>
+
+                        <div class="meal-info">
+                            <small>~450–700 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-carbs">Carbs</span>
+                                <span class="badge badge-protein">High Protein</span>
+                                <span class="badge badge-spice">Spicy</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="pakistani-biryani"
+                            data-meal-name="Chicken Biryani" data-meal-price="1050">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/karahi.png" alt="Karahi">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Mutton Karahi</h3>
+                        <p class="meal-desc">Sizzling, spicy, and full of character. Tender mutton cooked in an open wok
+                            with tomatoes, ginger, and green chilies.</p>
+
+                        <div class="meal-info">
+                            <small>~350–550 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-protein">High Protein</span>
+                                <span class="badge badge-spice">Spicy</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="pakistani-karahi" data-meal-name="Mutton Karahi"
+                            data-meal-price="1350">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/nihari.png" alt="Nihari">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Beef Nihari</h3>
+                        <p class="meal-desc">Slow-cooked richness that melts the heart. Bone-in beef shank stewed
+                            overnight in a complex, thick, and flavorful gravy.</p>
+
+                        <div class="meal-info">
+                            <small>~500–800 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-protein">High Protein</span>
+                                <span class="badge badge-savory">Rich Flavor</span>
+                                <span class="badge badge-primary">Signature Dish</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="pakistani-nihari" data-meal-name="Beef Nihari"
+                            data-meal-price="1200">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/kebabs.png" alt="Kebabs">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Seekh Kebabs (2 pieces)</h3>
+                        <p class="meal-desc">Grilled to perfection, bursting with flavor. Spiced minced meat molded onto
+                            skewers and char-grilled over an open flame.</p>
+
+                        <div class="meal-info">
+                            <small>~250–400 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-protein">High Protein</span>
+                                <span class="badge badge-savory">Grilled</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="pakistani-kebab"
+                            data-meal-name="Seekh Kebabs (2 pieces)" data-meal-price="900">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="meal-card">
+                    <img src="mealimages/beef haleem.png" alt="Haleem">
+
+                    <div class="meal-content">
+                        <h3 class="meal-title">Mutton Haleem</h3>
+                        <p class="meal-desc">Thick, hearty, and full of soul. Slow-cooked stew of mutton, wheat, and
+                            lentils, garnished with mint, ginger, and fried onions.</p>
+
+                        <div class="meal-info">
+                            <small>~400–650 kcal</small>
+                            <div class="meal-badges">
+                                <span class="badge badge-protein">High Protein</span>
+                                <span class="badge badge-carbs">Carbs</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-meal-id="pakistani-haleem" data-meal-name="Mutton Haleem"
+                            data-meal-price="1100">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <h2 class="stronk">Meal It!</h2>
+            <p>If You Crave It, We <span class="stronk">Meal It!</span></p>
+            <p class="small">&copy; 2025 Meal It! All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe - Meal It!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Meals</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="subscriptionpage.html">Subscribe</a></li>
+                <li class="cart-link">
+                    <a href="cart.html">Cart</a>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1 class="stronk">Subscribe to Meal It!</h1>
+            <p>Start your journey to a healthier, tastier lifestyle today!</p>
+        </div>
+
+        <!-- Subscription Form -->
+        <div class="form-container">
+            <div class="section">
+                <h2 class="section-title">Personal Information</h2>
+
+                <div class="form-group">
+                    <label for="full-name">Full Name *</label>
+                    <input type="text" id="full-name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" placeholder="your.email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" placeholder="+92 300 1234567" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Delivery Address *</label>
+                    <textarea id="address" placeholder="Enter your complete delivery address" required></textarea>
+                </div>
+            </div>
+
+            <!-- Subscription Plan Selection -->
+            <div class="section">
+                <h2 class="section-title">Choose Your Plan</h2>
+                <p>Select the meal plan that best fits your lifestyle:</p>
+
+                <div class="plan-cards">
+                    <div class="plan-card">
+                        <label>
+                            <input type="radio" name="plan" value="basic" required>
+                            <strong>Basic Plan</strong>
+                        </label>
+                        <div class="plan-price">Rs. 8,000</div>
+                        <p>14 Meals per week</p>
+                        <p>Perfect for singles</p>
+                    </div>
+
+                    <div class="plan-card">
+                        <label>
+                            <input type="radio" name="plan" value="standard" required>
+                            <strong>Standard Plan</strong>
+                        </label>
+                        <div class="plan-price">Rs. 15,000</div>
+                        <p>28 Meals per week</p>
+                        <p>Great for couples</p>
+                    </div>
+
+                    <div class="plan-card">
+                        <label>
+                            <input type="radio" name="plan" value="premium" required>
+                            <strong>Premium Plan</strong>
+                        </label>
+                        <div class="plan-price">Rs. 22,000</div>
+                        <p>42 Meals per week</p>
+                        <p>Full coverage for families</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dietary Preferences & Trivia -->
+            <div class="section">
+                <h2 class="section-title">Tell Us About Your Taste!</h2>
+                <p>Help us customize your meal experience by answering these quick questions:</p>
+
+                <div class="form-group">
+                    <label>What's your primary dietary goal? *</label>
+                    <select required>
+                        <option value="">Select your goal</option>
+                        <option value="weight-loss">Weight Loss</option>
+                        <option value="muscle-gain">Muscle Gain</option>
+                        <option value="maintenance">Maintain Current Weight</option>
+                        <option value="health">General Health & Wellness</option>
+                        <option value="convenience">Just Convenience!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Select your dietary preferences (check all that apply):</label>
+                    <div class="trivia-grid">
+                        <div class="trivia-option">
+                            <label>
+                                <input type="checkbox" name="diet" value="vegan">
+                                Vegan
+                            </label>
+                        </div>
+                        <div class="trivia-option">
+                            <label>
+                                <input type="checkbox" name="diet" value="vegetarian">
+                                Low Sodium
+                            </label>
+                        </div>
+                        <div class="trivia-option">
+                            <label>
+                                <input type="checkbox" name="diet" value="high-protein">
+                                High Protein
+                            </label>
+                        </div>
+                        <div class="trivia-option">
+                            <label>
+                                <input type="checkbox" name="diet" value="low-carb">
+                                Low Carb
+                            </label>
+                        </div>
+                        <div class="trivia-option">
+                            <label>
+                                <input type="checkbox" name="diet" value="gluten-free">
+                                Gluten Free
+                            </label>
+                        </div>
+                        <div class="trivia-option">
+                            <label>
+                                <input type="checkbox" name="diet" value="dairy-free">
+                                Dairy Free
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Any food allergies we should know about?</label>
+                    <textarea id="allergies" placeholder="E.g., nuts, shellfish, eggs, soy..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>How spicy do you like your food? *</label>
+                    <select required>
+                        <option value="">Select spice level</option>
+                        <option value="mild">Mild - Keep it gentle</option>
+                        <option value="medium">Medium - A little kick</option>
+                        <option value="hot">Hot - All the heat</option>
+                        <option value="extra-hot">Extra Hot - I love Spice!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>What's your favorite cuisine type?</label>
+                    <select>
+                        <option value="">Select cuisine</option>
+                        <option value="pakistani">Pakistani</option>
+                        <option value="italian">Italian</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="mexican">Mexican</option>
+                        <option value="american">American</option>
+                        <option value="mix">I love variety!</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Foods you absolutely DON'T want to see in your meals:</label>
+                    <textarea id="dislikes" placeholder="E.g., mushrooms, olives, cilantro..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>When do you prefer your deliveries? *</label>
+                    <select required>
+                        <option value="">Select delivery time</option>
+                        <option value="sunday">2:00 PM and 8:00 PM</option>
+                        <option value="monday">3:00 PM and 9:00 PM</option>
+                        <option value="wednesday">4:00 PM and 10:00 PM</option>
+                        <option value="friday">5:00 PM and 11:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required>
+                        I agree to the terms and conditions *
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn stronk">Start My Meal Journey!</button>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>Note:</strong> You can modify your preferences, skip weeks, or cancel anytime. No long-term
+                commitment required!
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <h2 class="stronk">Meal It!</h2>
+            <p>If You Crave It, We <span class="stronk">Meal It!</span></p>
+            <p class="small">&copy; 2025 Meal It! All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="subscribe.js"></script>
+    <script src="cart.js"></script>
+
+</body>
+
+</html>
